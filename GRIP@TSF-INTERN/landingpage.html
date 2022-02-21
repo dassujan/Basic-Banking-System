@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GRIP@TSF-INTERN</title>
+    <link rel="stylesheet" href="landingpage.css">
+    <link rel="icon" href="logo.png" type="image/jpg" sizes="16x16">
+</head>
+
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="landingpage.html">View Customers & Transaction History</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+    </section>
+    <div style="width: 50%; margin: 5% auto;">
+        <div class="card container" style="padding: 33px;">
+            <div id="titlediv" class="input">Name: <input id="name" type="text" style="width: 250px; height: 25px;"
+                    placeholder="Enter Your Name" /> </div>
+            <div id="titlediv" class="input">Email ID: <input id="email" type="text" style="width: 250px; height: 25px;"
+                    placeholder="name@example.com" /> </div>
+            <div id="titlediv" class="input">Rupees: <input id="balance" type="text" style="width: 250px; height: 25px;"
+                    placeholder="Enter Amount" /> </div>
+            <button id="entry">Transfer Money</button>
+        </div>
+    </div>
+    <table id="display">
+        <tr>
+            <th>Name</th>
+            <th>Email ID</th>
+            <th>Balance</th>
+        </tr>
+    </table>
+    <script src="script.js"></script>
+</body>
+
+</html>

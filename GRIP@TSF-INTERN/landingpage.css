@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  min-height: 10vh;
+  width: 100%;
+  background: radial-gradient(#fff, #00bfff);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  text-align: center;
+}
+nav {
+  display: flex;
+  padding: 0 4%;
+  justify-content: space-between;
+  align-items: center;
+}
+nav img {
+  width: 144px;
+  padding: 2px 10px;
+}
+.nav-links {
+  flex: 1;
+  text-align: right;
+}
+.nav-links ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 8px 12px;
+  position: relative;
+}
+.nav-links ul li a {
+  color: #ce1a1a;
+  text-decoration: none;
+  font-size: 16px;
+}
+.nav-links ul li::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background: #ce1a1a;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+.nav-links ul li:hover::after {
+  width: 90%;
+}
+nav .fa {
+  display: none;
+}
+.card {
+  background-color: #1a77bc99;
+  border: 2px solid #1a77bc99;
+  border-radius: 66px;
+}
+#titlediv {
+  margin-top: 50px;
+}
+input[type="text"]::placeholder {
+  text-align: center;
+}
+#entry {
+  width: 206px;
+  height: 50px;
+  font-size: 23px;
+  font-family: "Comic Sans Ms", cursive, sans-serif;
+  background-color: #0000ff;
+  color: whitesmoke;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.5);
+  margin: 30px;
+  border-radius: 100px;
+}
+#entry:hover {
+  background-color: #151555;
+}
+table {
+  border-collapse: collapse;
+  width: 70%;
+  margin: 50px auto;
+  background-color: lightsteelblue;
+}
+table,
+th,
+td {
+  border: 2px solid black;
+  padding: 5px;
+}
+th {
+  font-size: 30px;
+  font-weight: 700;
+  font-family: arial;
+  color: black;
+}
+td {
+  font-size: 25px;
+  color: navy;
+  font-weight: 400;
+  font-family: Georgia;
+}
